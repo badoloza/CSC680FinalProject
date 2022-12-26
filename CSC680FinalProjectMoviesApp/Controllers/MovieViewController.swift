@@ -48,4 +48,23 @@ class MovieViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)
+        
+        let movie = movieArray[indexPath!.row]
+        
+        // passing the info of selected cell to our movie details view controller
+        let movieDetailsViewcontroller = segue.destination as! MovieDetailsViewController
+        movieDetailsViewcontroller.movieTitle = movie.title
+        movieDetailsViewcontroller.overviewTitle = movie.overview
+        let moviePosterPath = movie.posterPath
+        let posterUrl = URL(string: "https://image.tmdb.org/t/p/w185\(moviePosterPath)")!
+        movieDetailsViewcontroller.posterPath = posterUrl
+        let backdropPath = movie.backdropPath
+        let backdropPathUrl = URL(string: "https://image.tmdb.org/t/p/w185\(backdropPath)")!
+        movieDetailsViewcontroller.backdropPath = backdropPathUrl
+        
+    }
+    
 }

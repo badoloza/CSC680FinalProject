@@ -10,6 +10,8 @@
 		07EA2146FD647E7231F08AA3 /* Pods_CSC680FinalProjectMoviesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624070EC6BFD6DF9C5799A47 /* Pods_CSC680FinalProjectMoviesAppTests.framework */; };
 		42187733295908B50043CC7C /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42187732295908B50043CC7C /* MovieViewController.swift */; };
 		42187735295908EE0043CC7C /* MovieViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42187734295908EE0043CC7C /* MovieViewControllerCell.swift */; };
+		42187737295A10740043CC7C /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42187736295A10740043CC7C /* MovieDetailsViewController.swift */; };
+		42187739295A1D0B0043CC7C /* UpcomingMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42187738295A1D0B0043CC7C /* UpcomingMoviesViewController.swift */; };
 		4237C34E2957FDCF004F2307 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4237C34D2957FDCF004F2307 /* MovieCell.swift */; };
 		4264373D2957797A00B8589A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4264373C2957797A00B8589A /* AppDelegate.swift */; };
 		4264373F2957797A00B8589A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4264373E2957797A00B8589A /* SceneDelegate.swift */; };
@@ -51,6 +53,8 @@
 		1C58028F396A24D24BD38BD1 /* Pods-CSC680FinalProjectMoviesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSC680FinalProjectMoviesAppTests.release.xcconfig"; path = "Target Support Files/Pods-CSC680FinalProjectMoviesAppTests/Pods-CSC680FinalProjectMoviesAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		42187732295908B50043CC7C /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		42187734295908EE0043CC7C /* MovieViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewControllerCell.swift; sourceTree = "<group>"; };
+		42187736295A10740043CC7C /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		42187738295A1D0B0043CC7C /* UpcomingMoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingMoviesViewController.swift; sourceTree = "<group>"; };
 		4237C34D2957FDCF004F2307 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		426437392957797A00B8589A /* CSC680FinalProjectMoviesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSC680FinalProjectMoviesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4264373C2957797A00B8589A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 			children = (
 				426437402957797A00B8589A /* ViewController.swift */,
 				42187732295908B50043CC7C /* MovieViewController.swift */,
+				42187736295A10740043CC7C /* MovieDetailsViewController.swift */,
+				42187738295A1D0B0043CC7C /* UpcomingMoviesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -468,10 +474,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				426437412957797A00B8589A /* ViewController.swift in Sources */,
+				42187739295A1D0B0043CC7C /* UpcomingMoviesViewController.swift in Sources */,
 				4264377429577B3D00B8589A /* MovieObjectModel.swift in Sources */,
 				4237C34E2957FDCF004F2307 /* MovieCell.swift in Sources */,
 				42187735295908EE0043CC7C /* MovieViewControllerCell.swift in Sources */,
 				4264377229577A1F00B8589A /* APIService.swift in Sources */,
+				42187737295A10740043CC7C /* MovieDetailsViewController.swift in Sources */,
 				4264373D2957797A00B8589A /* AppDelegate.swift in Sources */,
 				42187733295908B50043CC7C /* MovieViewController.swift in Sources */,
 				4264377029577A0300B8589A /* MovieJSONModel.swift in Sources */,

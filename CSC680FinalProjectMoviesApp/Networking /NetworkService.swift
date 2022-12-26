@@ -12,6 +12,8 @@ struct NetworkService {
     var session: URLSession = URLSession.shared
     static let sharedNetworkService = NetworkService()
     
+    // function takes any object for closure, just need to specify the type of object
+    // makes function reusable for any request
     func getJson<T: Decodable>(movie_url: String, onCompletion: @escaping (T?) -> ()) {
         print("hello")
         // making sure url is good to go
@@ -46,6 +48,7 @@ struct NetworkService {
             // once we have json data, we have to decode it
             let decoder = JSONDecoder()
             // now going to decode the json data we received
+            // using DispatchQueue so i dont block main threah
             DispatchQueue.main.async {
                 guard let decodedJSON = try? decoder.decode(T?.self, from: data) else {
                     print("error in decoded json")
