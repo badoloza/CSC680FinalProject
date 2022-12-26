@@ -1,0 +1,6 @@
+framework module Pods_CSC680FinalProjectMoviesApp_CSC680FinalProjectMoviesAppUITests {
+  umbrella header "Pods-CSC680FinalProjectMoviesApp-CSC680FinalProjectMoviesAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
