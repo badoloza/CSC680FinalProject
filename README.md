@@ -12,10 +12,11 @@ CSC680FinalProjectMoviesApp.xcworkspace
 --------------------------------------
 
 Project:
-
+-----------------------------------------------------------------------
+Unfortunately, the project works and looks best on iPhone 13 Pro
+-----------------------------------------------------------------------
 Users can view "now playing" movies and can acesss movie description by 
 clicking desired movie
-
+-----------------------------------------------------------------------
 Users can view "upcoming" movies and can access movie description by 
 clicking desired movie
-
