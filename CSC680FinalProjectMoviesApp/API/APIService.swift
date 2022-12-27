@@ -14,4 +14,5 @@ struct API {
     static let now_playing = URL(string: base_url + "now_playing?api_key=\(api_key)")!
     static let base_image_url = "http://image.tmdb.org/t/p/w185"
     static let image = URL(string: base_image_url)!
+    static let upcoming_movies = URL(string: base_url + "upcoming?api_key=\(api_key)")!
 }

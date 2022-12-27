@@ -1,15 +1,14 @@
 //
-//  MovieDetailsViewController.swift
+//  UpcomingMovieDetailsViewController.swift
 //  CSC680FinalProjectMoviesApp
 //
 //  Created by e on 12/26/22.
 //
 
 import UIKit
-import AlamofireImage
 
-class MovieDetailsViewController: UIViewController {
-    @IBOutlet weak var posterLabel: UIImageView!
+class UpcomingMovieDetailsViewController: UIViewController {
+    @IBOutlet weak var imageLabel: UIImageView!
     
     @IBOutlet weak var backdropLabel: UIImageView!
     
@@ -18,26 +17,25 @@ class MovieDetailsViewController: UIViewController {
     @IBOutlet weak var overviewLabel: UILabel!
     
     var movieTitle: String!
-    var overviewTitle: String!
-    var posterPath: URL!
-    var backdropPath: URL!
-    
+    var movieOverview: String!
+    var moviePosterPath: URL!
+    var movieBackDropPath: URL!
     
     override func viewDidLoad() {
         // changing name of back button
         let backButton = UIBarButtonItem()
-        backButton.title = "Movies"
+        backButton.title = "Upcoming Movies"
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         
         super.viewDidLoad()
+        
         setUpOutlets()
-
     }
     
-    func setUpOutlets() {
+    func setUpOutlets(){
         titleLabel.text = movieTitle
-        overviewLabel.text = overviewTitle
-        posterLabel.af.setImage(withURL: posterPath)
-        backdropLabel.af.setImage(withURL: backdropPath)
+        overviewLabel.text = movieOverview
+        imageLabel.af.setImage(withURL: moviePosterPath)
+        backdropLabel.af.setImage(withURL: movieBackDropPath)
     }
 }

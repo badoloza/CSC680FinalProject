@@ -50,6 +50,7 @@ struct NetworkService {
             // now going to decode the json data we received
             // using DispatchQueue so i dont block main threah
             DispatchQueue.main.async {
+                print(data)
                 guard let decodedJSON = try? decoder.decode(T?.self, from: data) else {
                     print("error in decoded json")
                     return
