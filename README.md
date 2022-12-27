@@ -20,4 +20,4 @@ Unfortunately, the project works and looks best on iPhone 13 Pro
 clicking desired movie</b>
 
 <b>Users can view "upcoming" movies and can access movie description by 
-clicking desired movie</b?
+clicking desired movie</b>
