@@ -13,7 +13,8 @@ CSC680FinalProjectMoviesApp.xcworkspace
 
 Project:
 -----------------------------------------------------------------------
-Unfortunately, the project works and looks best on iPhone 13 Pro
+Unfortunately, I have not gotten the hang of contraints, but the 
+application looks good on most devices except iPhone 7
 -----------------------------------------------------------------------
 
 <b>Users can view "now playing" movies and can acesss movie description by 
